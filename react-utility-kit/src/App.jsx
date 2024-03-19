@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import Pagination from './utility/Pagination'
+// import Pagination from './utility/Pagination'
 import './App.css'
+import DebouncedSearch from './searchUI/DebouncedSearch'
+import Search from './searchUI/Search'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-    <Pagination/>
+    <Search/>
+    <DebouncedSearch/>
+    {/* <Pagination/> */}
     </>
   )
 }
