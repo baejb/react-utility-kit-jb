@@ -1,16 +1,13 @@
-// import Pagination from './utility/Pagination'
+import Router from './Router'
 import './App.css'
-import DebouncedSearch from './searchUI/DebouncedSearch'
-import Search from './searchUI/Search'
+
 
 function App() {
  
 
   return (
     <>
-    <Search/>
-    <DebouncedSearch/>
-    {/* <Pagination/> */}
+      <Router />
     </>
   )
 }
