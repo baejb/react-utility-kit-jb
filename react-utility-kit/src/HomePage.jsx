@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 const Container = styled.div`
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
 `
 const Child = styled.div`
     width: 30%;
-    font-size: 20px;
+    height: 200px;
+    font-size: 30px;
+    border: 2px solid #E66666;
+    margin: 10px;
 
 
 `
@@ -25,6 +28,9 @@ const HomePage = () => {
             </Child>
             <Child>
              <Link to='/debouncedsearch'>향상된 SearchUI 구현</Link>
+            </Child>
+            <Child>
+                <Link to='/reactquery'>React-query 연습</Link>
             </Child>
         </Container>
     );
